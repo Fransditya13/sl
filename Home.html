@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home SL</title>
+    <link rel="icon" type="image/png" href="Asset/mysl2.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img class="logohome" src="Asset/mysl2.png" alt="">
+            <h3 style="color: white;">Home</h3>
+            <ul class="padding notok">
+                <a href="Home.html" class="navbar homelogo">
+                    Home
+                </a>
+                <a href="MyPackage.html" class="navbar boxlogo">
+                    My Package
+                </a>
+                <a href="Promo.html" class="navbar promologo">
+                    Promo
+                </a>
+                <a href="Feedback.html" class="navbar survey">
+                    Feedback
+                </a>
+                <a href="Login.html" class="navbar logout">
+                    LogOut
+                </a>
+            </ul>
+        </nav>
+        <ul class="ok">
+                <a href="Home.html" class="navbar homelogo">
+                    Home
+                </a>
+                <a href="MyPackage.html" class="navbar boxlogo">
+                    My Package
+                </a>
+                <a href="Promo.html" class="navbar promologo">
+                    Promo
+                </a>
+                <a href="Feedback.html" class="navbar survey">
+                    Feedback
+                </a>
+                <a href="Login.html" class="navbar logout">
+                    LogOut
+                </a>
+            </ul>
+    </header>
+<main>
+    <div class="homeAll">
+        <div class="profil">
+            <img class="foto" src="Asset/profpic.png" alt="">
+        </div>
+        <div class="boxbalance">
+            <p>Welcome Back,
+            <b>Feisal Simanjuntak Simalakama!!!</b>
+            <hr>
+            <p>SL Number</p>
+            <h1 id="numbe"></h1>
+            <p>Balance</p>
+            <h1>Rp 69.696.969</h1>
+        </div>
+        <div class="boxrecomend">
+        <h1>Recomended For You</h1>  
+        <div class="paket">
+            <div class="recomendBox">
+                    <h1>SL Unlimited</h1>
+                    <b>kuota Unlimited</b>
+                    <b>Telpon Unlimited</b>
+                    <b>SMS Unlimited</b>
+                    <h1>Rp 200.000</h1>
+                    <button class="btnbuy">Buy Now</button>
+            </div>
+            <div class="recomendBox">
+                    <h1>SL Combo</h1>
+                    <b>kuota 20GB</b>
+                    <b>Telpon All Operator</b>
+                    <b>SMS 100 ALL Operator</b>
+                    <h1>Rp 50.000</h1>
+                    <button class="btnbuy">Buy Now</button>
+            </div>
+        </div>
+        </div>
+</main>
+<script>
+        // window.localStorage.getItem("phonenumbe")
+        document.getElementById("numbe").innerHTML = window.localStorage.getItem("phonenumbe");
+    </script>
+</body>
+</html>

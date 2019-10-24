@@ -1,0 +1,541 @@
+/*Login*/
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #354065;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginlogo{
+    justify-content: center;
+    width: 100px;
+}
+
+.backlogin{
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px;
+}
+
+.loginbox{
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 300px;
+    background: #465484;
+    padding: 10px 10px;
+    border:  #DDCB93;
+    border-radius: 10px;
+    border: 2px solid #DDCB93;
+}
+
+.phonelogo{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 5px;
+    border: 3px solid grey;
+    border-radius: 10px;
+    background-image: url(Asset/phone.png);
+    background-repeat: no-repeat;
+    padding-left: 35px !important;
+    background-size: 25px;
+    background-position-y: 5px;
+    background-position-x: 3px;
+}
+
+.passwordlogo{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 2px;
+    border: 3px solid grey;
+    border-radius: 10px;
+    background-image: url(Asset/lock.png);
+    background-repeat: no-repeat;
+    padding-left: 35px !important;
+    background-size: 25px;
+    background-position-y: 5px;
+    background-position-x: 3px;
+}
+
+.loginbtn{
+    background: #D95734;
+    color: white;
+    font-size: 12pt;
+    width: 100%;
+    border: 2px solid #C2492F;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.loginbtn:hover{
+    background: #C2492F;
+}
+
+/*Home + NAV*/
+.logohome{
+    width: 50px;
+}
+.nav{
+    width: 100%;
+    justify-content: space-between;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #465484;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+.homelogo{
+    background-image: url(Asset/iconhome.png);
+    background-repeat: no-repeat;
+    padding-left: 35px !important;
+    background-size: 23px;
+    background-position-y: -2px;
+    background-position-x: 3px;
+}
+
+.boxlogo{
+    background-image: url(Asset/box.png);
+    background-repeat: no-repeat;
+    padding-left: 35px !important;
+    background-size: 18px;
+    background-position-y: 0px;
+    background-position-x: 3px;
+}
+
+.promologo{
+    background-image: url(Asset/promo.png);
+    background-repeat: no-repeat;
+    padding-left: 35px !important;
+    background-size: 18px;
+    background-position-y: 0px;
+    background-position-x: 3px;
+}
+
+.survey{
+    background-image: url(Asset/survey.png);
+    background-repeat: no-repeat;
+    padding-left: 35px !important;
+    background-size: 18px;
+    background-position-y: 0px;
+    background-position-x: 3px;
+}
+
+.logout{
+    background-image: url(Asset/logout.png);
+    background-repeat: no-repeat;
+    padding-left: 35px !important;
+    background-size: 18px;
+    background-position-y: 0px;
+    background-position-x: 3px;
+}
+
+.homelogo.nav:hover{
+    background-color: green;
+}
+
+.navbar{
+    margin: 0px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.homeAll{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    margin: 20px auto;
+    border: black;
+    margin: 80px auto;
+}
+
+.foto{
+    width: 300px;
+    border-style: solid;
+    border-radius: 400px;
+    margin: 25px;
+    border-width: 5px;
+    border: 3px solid #465484;
+}
+
+.boxbalance{
+    width: 300px;
+    background: white;
+    margin: 80px 16px;
+}
+
+.boxrecomend{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+    justify-content: space-between;
+    width: 600px;
+    color: black;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.paket{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.recomendBox{
+    width: 250px;
+    margin: 0px 10px;
+    border: black;
+    border-radius: 10px;
+    border: 3px solid #354065;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btnbuy{
+    justify-content: center;
+    align-content: center;
+    width: 90px;
+    margin: 20px auto;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #C2492F;
+    border: 2px solid #D95734;
+    color: white;
+    cursor: pointer;
+}
+
+.btnbuy:hover{
+    background-color: #D95734;
+}
+
+/*MyPackage*/
+.homepac{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: white;
+    margin: 20px auto;
+    border: black;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.packagelist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.package{
+    border-style: solid;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 200PX;
+    border-color: #465484;
+    background-color: #354065;
+    color: antiquewhite;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#progressbar1 {
+    background-color: #465484;
+    border-radius: 3px;
+    padding: 3px;
+  }
+  
+  #progressbar1>div {
+    background-color: white;
+    width: 95%;
+    height: 20px;
+    border-radius: 3px;
+  }
+
+  #progressbar2 {
+    background-color: #465484;
+    border-radius: 3px;
+    padding: 3px;
+  }
+  
+  #progressbar2>div {
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 3px;
+  }
+/*Promo*/
+.promobox{
+    width: 1000px;
+    background: white;
+    margin: 80px auto;
+    padding: 20px 20px;
+    border: black;
+    border-radius: 10px;
+    border: 3px solid grey;
+}
+
+.bok {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: black;
+    border-radius: 10px;
+    border: 3px solid grey;
+}
+
+.box{
+    widows: 500px;;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.buybtn{
+    background: #C2492F;
+    color: white;
+    font-size: 12pt;
+    width: 50%;
+    border: 2px solid #D95734;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.buybtn:hover{
+    background-color: #D95734;
+}
+
+.phonepromo{
+    width: 50%;
+}
+
+
+/*Feedback*/
+.feedbacksquare{
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px;
+}
+
+.userlogo{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 10px;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+.emaillogo{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 10px;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+.feedbox{
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 12pt;
+    margin-bottom: 2px;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+.sumbitbtn{
+    background: #D95734;
+    color: white;
+    font-size: 12pt;
+    width: 100%;
+    border: 2px solid #D95734;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sumbitbtn:hover{
+    background: #D95734;
+}
+
+@media (min-width: 421px) and (max-width: 1024px) {
+    .ok {
+        display: none;
+    }
+}
+
+/*responsif*/
+@media (max-width: 420px){
+/*home*/
+.logohome {
+    height: 75px;
+}
+
+.homeAll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.boxrecomend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.paket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+/*Mypackage*/
+.packagelist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+/*Promo*/
+.promobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.bok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.promobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    width: 100%;
+}
+/*Feedback*/
+.feedbacksquare{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px; 
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.notok {
+    display: none;
+}
+
+.ok {
+    margin-top: 75px;
+    padding: 0;
+}
+
+.logohome{
+    display: none;
+}
+.homelogo{
+    background-image: none;
+    padding: 0 !important;
+}
+.boxlogo{
+    background-image: none;
+    padding: 0 !important;
+}
+.promologo{
+    background-image: none;
+    padding: 0 !important;
+}
+.logout{
+    background-image: none;
+    padding: 0 !important;
+}
+.survey{
+    background-image: none;
+    padding: 0 !important;
+}
+}
